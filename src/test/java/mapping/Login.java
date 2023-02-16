@@ -7,7 +7,6 @@ import io.cucumber.java.en.When;
 
 public class Login 
 {
-
 	@Given ("^User launch browser with exe as \"(.*)\"$")
 	public void browserLaunch(String exe)
 	{
@@ -41,8 +40,7 @@ public class Login
 	input4[0]="//*[@name='txtPword']";
 	input4[1]=pwd;
 	SeleniumOperations2.sendText(input4);
-	}
-	
+	}	
 	@When ("^user click on login button$")
 	public void login() 
 	{
